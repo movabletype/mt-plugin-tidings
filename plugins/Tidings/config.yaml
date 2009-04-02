@@ -1,0 +1,11 @@
+name: Tidings
+id: Tidings
+key: Tidings
+version: 0.1
+author_name: Six Apart Ltd.
+author_link: http://www.sixapart.com/
+description: Movable Type interface to tidylib
+tags:
+    modifier:
+        tidy:
+            handler: $Tidings::Tidings::Util::tidyfilter
