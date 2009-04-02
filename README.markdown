@@ -1,7 +1,7 @@
 Tidings
 =============
 
-Tidings is a simple wrapper around Andy Lester's [HTML::Tidy](http://search.cpan.org/dist/HTML-Tidy/ "HTML::Tidy on CPAN"), itself a wrapper around [libtidy](http://tidy.sourceforge.net/ "libtidy on sourceforge"). It's a convenient way of making sure that all your tags are closed and that your HTML is in squinting distance of validation, to avoid late-night typos producing a pageful at the W3 Validator.
+Tidings is a simple wrapper around Andy Lester's [HTML::Tidy](http://search.cpan.org/dist/HTML-Tidy/ "HTML::Tidy on CPAN"), itself a wrapper around [libtidy](http://tidy.sourceforge.net/ "libtidy on sourceforge"). It's a convenient way of making sure that all your tags are closed and that your HTML is in squinting distance of validation, to avoid late-night typos producing a page full of red at the W3 Validator.
 
 	<mt:section tidy="xhtml","numeric_entities:1;char_encoding:ascii;quote_marks:1;">
 	<blockquote><p>The sun comes up, the tide rolls out<br>
