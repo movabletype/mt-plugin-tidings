@@ -9,7 +9,7 @@
 # version 2 for more details.  You should have received a copy of the GNU 
 # General Public License version 2 along with this program. If not, see 
 # <http://www.gnu.org/licenses/>.
-# $Id$
+# $Id: Util.pm 17729 2009-04-02 01:08:21Z steve $
 package Tidings::Util;
 
 sub tidyfilter {
