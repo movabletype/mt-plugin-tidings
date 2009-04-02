@@ -13,7 +13,7 @@ Tidings is a simple wrapper around Andy Lester's [HTML::Tidy](http://search.cpan
 	&mdash; Fugazi, "Glue Man", <i>13 Songs<i>
 	</mt:section>
 
-This nasty code, with its doubled italics tags and missing &lt;/blockquote&lt;, is rendered as:
+This nasty code, with its doubled italics tags and missing &lt;/blockquote&gt;, is rendered as:
 
 	<blockquote>
 	<p>The sun comes up, the tide rolls out<br />
