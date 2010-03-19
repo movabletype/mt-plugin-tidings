@@ -7,6 +7,10 @@ sourceforge"). It's a convenient way of making sure that all your tags are
 closed and that your HTML is in squinting distance of validation, to avoid
 late-night typos producing a page full of red at the W3 Validator.
 
+## Usage
+
+Wrap ugly code in an `<mt:section tidy=[]...]>` tag:
+
 	<mt:section tidy="xhtml","numeric_entities:1;char_encoding:ascii;quote_marks:1;">
 	<blockquote><p>The sun comes up, the tide rolls out<br>
 	The trucks roll by the park still a park<br>
@@ -17,23 +21,23 @@ late-night typos producing a page full of red at the W3 Validator.
 	&mdash; Fugazi, "Glue Man", <i>13 Songs<i>
 	</mt:section>
 
-This nasty code, with its doubled italics tags and missing
-</blockquote>, is rendered as:
+This nasty code above, with its doubled italics tags and missing `</blockquote>`
+is tidied and reformatted to become:
 
-	<blockquote>
-	<p>The sun comes up, the tide rolls out<br />
-	The trucks roll by the park still a park<br />
-	Where children play and pick up stones<br />
-	Anything to make them feel less alone - he&amp;#39;s alone<br />
-	His mind is his own town where all his thoughts run aground<br />
-	They fall all over and down</p>
-	&mdash; Fugazi, &quot;Glue Man&quot;, <i>13 Songs</i></blockquote>
+    <blockquote>
+    <p>The sun comes up, the tide rolls out<br />
+    The trucks roll by the park still a park<br />
+    Where children play and pick up stones<br />
+    Anything to make them feel less alone - he&#39;s alone<br />
+    His mind is his own town where all his thoughts run aground<br />
+    They fall all over and down</p>
+    &#8212; Fugazi, &quot;Glue Man&quot;, <i>13 Songs</i></blockquote>
 
-tidy is a content filter that takes xml, html, or xhtml as arguments -- xhtml
-is the default value -- and any number of HTML::Tidy arguments (strung
-together as key:value pairs and separated by semicolons) as an optional
-secondary option.  Using Tidings and HTML::Tidy to clean up character encoding
-issues is doable but can be tricky depending on your database and DOCTYPE; a
-dedicated tool like
+The `tidy` attribute in the mt:section tag above is a content filter that takes
+"xml", "html", or "xhtml" as an argument -- "xhtml" is the default value -- and
+any number of HTML::Tidy arguments (strung together as key:value pairs and
+separated by semicolons) as an optional secondary argument.  Using Tidings and
+HTML::Tidy to clean up character encoding issues is doable but can be tricky
+depending on your database and DOCTYPE; a dedicated tool like
 [NaughtyWordChars](http://plugins.movabletype.org/naughtywordchar/
 "NaughtyWordChars at plugins.movabletype.org") is more likely to succeed.
