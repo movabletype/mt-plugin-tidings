@@ -29,8 +29,8 @@ This nasty code, with its doubled italics tags and missing
 	They fall all over and down</p>
 	&mdash; Fugazi, &quot;Glue Man&quot;, <i>13 Songs</i></blockquote>
 
-tidy is a content filter that takes xml, html, or xhtml as arguments --- xhtml
-is the default value --- and any number of HTML::Tidy arguments (strung
+tidy is a content filter that takes xml, html, or xhtml as arguments -- xhtml
+is the default value -- and any number of HTML::Tidy arguments (strung
 together as key:value pairs and separated by semicolons) as an optional
 secondary option.  Using Tidings and HTML::Tidy to clean up character encoding
 issues is doable but can be tricky depending on your database and DOCTYPE; a
