@@ -9,7 +9,7 @@ late-night typos producing a page full of red at the W3 Validator.
 
 ## Usage
 
-Wrap ugly code in an `<mt:section tidy=[]...]>` tag:
+Wrap ugly code in an `<mt:section tidy="...","...">` tag:
 
 	<mt:section tidy="xhtml","numeric_entities:1;char_encoding:ascii;quote_marks:1;">
 	<blockquote><p>The sun comes up, the tide rolls out<br>
