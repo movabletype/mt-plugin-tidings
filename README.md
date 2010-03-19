@@ -33,11 +33,12 @@ is tidied and reformatted to become:
     They fall all over and down</p>
     &#8212; Fugazi, &quot;Glue Man&quot;, <i>13 Songs</i></blockquote>
 
-The `tidy` attribute in the mt:section tag above is a content filter that takes
-"xml", "html", or "xhtml" as an argument -- "xhtml" is the default value -- and
-any number of HTML::Tidy arguments (strung together as key:value pairs and
-separated by semicolons) as an optional secondary argument.  Using Tidings and
-HTML::Tidy to clean up character encoding issues is doable but can be tricky
-depending on your database and DOCTYPE; a dedicated tool like
+The `tidy` attribute in the `mt:section` tag above is a content filter that
+takes `"xml"`, `"html"`, or `"xhtml"` as an argument -- `"xhtml"` is the
+default value -- and any number of HTML::Tidy arguments (strung together as
+`key:value` pairs and separated by semicolons) as an optional secondary
+argument.  Using Tidings and HTML::Tidy to clean up character encoding issues
+is doable but can be tricky depending on your database and DOCTYPE; a
+dedicated tool like
 [NaughtyWordChars](http://plugins.movabletype.org/naughtywordchar/
 "NaughtyWordChars at plugins.movabletype.org") is more likely to succeed.
