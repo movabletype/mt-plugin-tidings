@@ -11,15 +11,15 @@ late-night typos producing a page full of red at the W3 Validator.
 
 Wrap ugly code in an `<mt:section tidy="...","...">` tag:
 
-	<mt:section tidy="xhtml","numeric_entities:1;char_encoding:ascii;quote_marks:1;">
-	<blockquote><p>The sun comes up, the tide rolls out<br>
-	The trucks roll by the park still a park<br>
-	Where children play and pick up stones<br>
-	Anything to make them feel less alone - he's alone<br>
-	His mind is his own town where all his thoughts run aground<br>
-	They fall all over and down</p>
-	&mdash; Fugazi, "Glue Man", <i>13 Songs<i>
-	</mt:section>
+    <mt:section tidy="xhtml","numeric_entities:1;char_encoding:ascii;quote_marks:1;">
+    <blockquote><p>The sun comes up, the tide rolls out<br>
+    The trucks roll by the park still a park<br>
+    Where children play and pick up stones<br>
+    Anything to make them feel less alone - he's alone<br>
+    His mind is his own town where all his thoughts run aground<br>
+    They fall all over and down</p>
+    &mdash; Fugazi, "Glue Man", <i>13 Songs<i>
+    </mt:section>
 
 This nasty code above, with its doubled italics tags and missing `</blockquote>`
 is tidied and reformatted to become:
